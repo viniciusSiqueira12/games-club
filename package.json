@@ -1,0 +1,43 @@
+{
+  "name": "games_club",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
+    "start": "ts-node src/shared/infra/http/server.ts",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "require-dir": "^1.2.0",
+    "swagger-jsdoc": "^7.0.0-rc.4",
+    "swagger-ui-express": "^4.1.6",
+    "ts-node-dev": "^1.1.6",
+    "tsyringe": "^4.4.0",
+    "typeorm": "^0.2.31"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.20",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/multer": "^1.4.5",
+    "@types/require-dir": "^1.0.1",
+    "@types/swagger-jsdoc": "^6.0.0",
+    "@types/swagger-ui-express": "^4.1.2",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.3",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.2.2"
+  }
+}
